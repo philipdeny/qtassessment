@@ -1,0 +1,15 @@
+{
+    "AWSTemplateFormatVersion" : "2010-09-09",
+    "Description" :"cloud formation test",
+    "Resources":
+        {"Ec2Instance":
+{
+    "Type":"AWS::EC2::Instance",
+    "InstanceType" :"t2.micro",
+    "KeyName":"test.pem",
+    "ImageId":"<customid>",
+    "SubnetId": "subnet-02461fe8a88f635a2"
+}
+    }
+
+}
